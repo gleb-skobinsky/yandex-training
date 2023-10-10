@@ -7,7 +7,7 @@ class Solution {
 
         while (left <= right) {
             // находим середину массива
-            var mid = left + ((right - left) / 2)
+            val mid = left + ((right - left) / 2)
             // если число в середине массива - искомое, возвращаем
             if (nums[mid] == target) return mid
             // если число в середине массива меньше искомого, продолжаем поиск в первой половине
