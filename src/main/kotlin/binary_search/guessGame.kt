@@ -1,4 +1,4 @@
-package add_two_numbers
+package binary_search
 
 open class GuessGame {
     private val answer = 6
@@ -15,7 +15,7 @@ open class GuessGame {
     }
 }
 
-class Solution : GuessGame() {
+class GuessSolution : GuessGame() {
     override fun guessNumber(n: Int): Int {
         var left = 1
         var right = n
@@ -24,8 +24,8 @@ class Solution : GuessGame() {
             mid = left + (right - left) / 2
             when (guess(mid)) {
                 0 -> break
+                1 -> left = mid + 1
                 -1 -> right = mid - 1
-                else -> left = mid + 1
             }
         }
         return mid

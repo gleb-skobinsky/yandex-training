@@ -1,4 +1,4 @@
-package merge_k_lists
+package linked_lists
 
 import java.util.*
 

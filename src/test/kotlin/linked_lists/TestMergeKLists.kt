@@ -1,4 +1,4 @@
-package merge_k_lists
+package linked_lists
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
